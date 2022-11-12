@@ -137,7 +137,7 @@ header
     text-align: left;
 }
 
-.dropdawn a:hover, .dropdawn:hover .dropbtn
+.top-nav a:hover, .dropdawn:hover .dropbtn
 {
     color: #ffa500;
 }
@@ -145,5 +145,155 @@ header
 .dropdawn:hover .dropdawn-content
 {
     display: block;
+}
 
+/* gestion des animations*/
+@-webkit-keyframes slideIn
+{
+    from 
+    {
+        bottom: -300px;
+        opacity: 0;   
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn
+{
+    from 
+    {
+        bottom: -300px;
+        opacity: 0;   
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+.animate
+{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom
+{
+    from
+    {
+        -webkit-transform: scale(0);
+    }
+    to
+    {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes animatezoom
+{
+    from{
+        -webkit-transform: scale(0);
+        }
+        to
+        {
+            -webkit-transform: scale(1);
+        }
+}
+
+@media screen and (max-width: 820px)
+{
+    .banner .section-left 
+    {
+        display: none;
+    }
+    .banner .section-right
+    {
+        float: none;
+        width: 100%;
+    }
+    .top-nav a, .dropdawn .dropbtn
+    {
+        display: none; /* effacement */
+    }
+    .top-nav a.icon
+    {
+        float: right;
+        display: block;
+    }
+    .dropdawn-content
+    {
+        -webkit-animation-name: none;
+        -webkit-animation-duration: 1s;
+        animation-name: none;
+        animation-duration: 1s;
+    }
+    .active
+    {
+        margin-left: 0!important;
+    }
+    .top-nav
+    {
+        height: 50px;
+        width: 100%;
+        transition: 0.5s;
+    }
+    .top-nav.responsive
+    {
+        position: relative;
+        height: 70vh; /*taille de l'ecran */
+        overflow-y: auto;
+    }
+    .top-nav.responsive .icon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .top-nav.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .top-nav.responsive .dropdawn
+    {
+        float: none;
+    }
+    .top-nav.responsive .dropdawn-content
+    {
+        position: relative;
+    }
+    .top-nav.responsive .dropdawn .dropbtn
+    {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
 }
