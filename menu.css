@@ -36,3 +36,114 @@ header
     margin: 0 10px;
     color: black;
 }
+
+.logo
+{
+    background-color: #f1c40f;
+    padding: 25px;
+    position: absolute;
+    width: 230px;
+    left: -25px;
+    top: 30px;
+}
+
+.parallelogram
+{
+    transform: skew(-20deg);
+}
+
+.skew-fix
+{
+    width: 60%;
+    display: inline-block; 
+    transform: skew(20deg);
+}
+
+.logo img
+{
+    width: 180px;
+    height: 25px;
+}
+
+.top-nav
+{
+    background-color: black;
+    overflow: hidden;
+}
+
+.top-nav a
+{
+    display: block;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.top-nav .icon
+{
+    display: none;
+    outline: none !important;
+}
+
+.top-nav .active
+{
+    color: #f1c40f;
+    margin-left: 250px;
+}
+
+.dropdawn
+{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdawn .dropbtn
+{
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.dropdawn-content
+{
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-top: 2px solid #f1c40f;
+    z-index: 1;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 1s;
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+
+.dropdawn-content a
+{
+    float: none;
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdawn a:hover, .dropdawn:hover .dropbtn
+{
+    color: #ffa500;
+}
+
+.dropdawn:hover .dropdawn-content
+{
+    display: block;
+
+}
