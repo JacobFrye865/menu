@@ -1,0 +1,38 @@
+*, ::after, ::before
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* pour que opera puisse lire */
+    -moz-box-sizing: border-box; /*pour que mozilla puisse lire*/
+}
+
+.banner
+{
+    background-color: #f1c40f;
+    padding: 10px 0;
+    width: 100%;
+}
+
+body
+{
+    margin: 0;
+    overflow: hidden; 
+}
+
+header
+{
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: auto;
+}
+
+.banner .section-right
+{
+    float: right;
+}
+
+.banner a
+{
+    margin: 0 10px;
+    color: black;
+}
